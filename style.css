@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+
+    background-image: url(assets/bg.jpg);
+    height: 80vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px ,100 vw);
+}
+.main .box{
+
+    height: 80vh;
+    width: 100%;
+    opacity: 0.50;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 62px;
+
+}
+
+nav img{
+
+    width: 80px;
+    fill: red;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+}
