@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.main{
+body {
+    background-color: black;
+}
+
+.main {
 
     background-image: url(assets/bg.jpg);
-    height: 80vh;
+    height: 100vh;
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1200px ,100 vw);
+    background-size: max(1200px, 100 vw);
 }
-.main .box{
 
-    height: 80vh;
+.main .box {
+
+    height: 100vh;
     width: 100%;
     opacity: 0.50;
     position: absolute;
@@ -24,35 +29,110 @@
     background-color: black;
 }
 
-nav{
+nav {
     max-width: 80vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     height: 62px;
 
 }
 
-nav img{
+nav img {
 
-    width: 80px;
+    width: 120px;
     fill: red;
     position: relative;
     z-index: 10;
 }
 
-nav button{
+nav button {
     position: relative;
     z-index: 10;
 }
 
-.hero{
-    height: 100%;
+.hero {
+    height: calc(100% - 62px);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     flex-direction: column;
     position: relative;
+    padding: 0px 30px;
+    gap: 23px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 47px;
+    font-weight: 900;
+    align-items: center;
+
+
+}
+
+.hero> :nth-child(2) {
+
+    font-size: 25px;
+    font-weight: 400px;
+
+    align-items: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 18px;
+    font-weight: 170px;
+
+    align-items: center;
+}
+
+.hero .box1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 button {
+
+    color: white;
+    font-size: 20px;
+    background-color: red;
+    padding: 5px;
+    border-radius: 6px;
+    font-weight: 200px;
+}
+
+.main input {
+    padding: 7px 0.2px 8px 20px;
+    background-color: rgba(23, 23, 23, 0.3);
+}
+
+.main .English{
+    background-color: rgba(247, 237, 237, 0.3);
+    border-radius: 5px;
+    padding: 2px;
+    height: 30px;
+    padding:5px 15px 5px 15px;
+    color: white;
+ 
+}
+
+.main .Sign{
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px 15px 5px 15px;
+    align-content: center;
+}
+
+
+.main .border{
+    width: 100%;
+    height: 7px;
+    background-color: grey;
+
 }
